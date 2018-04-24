@@ -1,4 +1,7 @@
 # testinfra
+
+[![Build Status](https://travis-ci.org/qiscus/testinfra.svg?branch=master)](https://travis-ci.org/qiscus/testinfra)
+
 Helper for testing
 
 ## Requirements
