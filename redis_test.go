@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"bitbucket.org/qiscus/testinfra"
 	"github.com/go-redis/redis"
+	"github.com/qiscus/testinfra"
 )
 
 func TestRedis(t *testing.T) {

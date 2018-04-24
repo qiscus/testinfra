@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"testing"
 
-	"bitbucket.org/qiscus/testinfra"
 	_ "github.com/lib/pq"
+	"github.com/qiscus/testinfra"
 )
 
 func TestRunDBMigration(t *testing.T) {
