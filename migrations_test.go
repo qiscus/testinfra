@@ -18,7 +18,7 @@ func TestRunDBMigration(t *testing.T) {
 	}
 
 	// run the first migration
-	testinfra.RunDBMigration(db, "postgres", "_fixtures/assets")
+	testinfra.RunDBMigration(dsn, "_fixtures/assets")
 
 	_, err = db.Exec(`
 		insert into users
@@ -45,7 +45,7 @@ func TestRunDBMigration(t *testing.T) {
 	}
 
 	// reset database
-	testinfra.RunDBMigration(db, "postgres", "_fixtures/assets")
+	testinfra.RunDBMigration(dsn, "_fixtures/assets")
 
 	rows, err = db.Query(querySelect)
 	if err != nil {
